@@ -10,12 +10,16 @@
 <body>
 	<header>
 		<div class="container">
-			<h1><img src="imgs/logo.png" alt="UCONECTA"></h1>
+			<h1>
+				<!--<img src="imgs/logo.png" alt="UCONECTA">-->
+				UCONECTA
+			</h1>
 			<nav>
 				<ul>
 					<li><a href="#">Quienes Somos</a></li>
 					<li><a href="#">FAQ</a></li>
 					<li><a href="#">Politicas de Privacidad</a></li>
+					<li><a class="login" href="">Login</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -129,6 +133,25 @@
 			<p>UCONECTA 2014, Todos los derechos reservados.</p>
 		</div>
 	</footer>
-
+	<div class="call-to-action">
+		<div class="container">
+			<a href="">Unete con Facebook</a>
+		</div>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script>
+		var header = $('header').outerHeight();
+		var principal = $('.principal').outerHeight();
+		var suma = header+principal;
+		$(window).scroll(function(){
+			var top = $(window).scrollTop();
+			if(top>suma){
+				$('.call-to-action').css("display","block");
+			}
+			else{
+				$('.call-to-action').css("display","none");
+			}
+		});
+	</script>
 </body>
 </html>
