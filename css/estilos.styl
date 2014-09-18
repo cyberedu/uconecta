@@ -180,48 +180,51 @@ div.call-to-action
 	width 100%
 	font-size 0
 	vertical-align top
+	position relative
 section.dashboard-left
 	background-color #2c3e50
 	color #ecf0f1
 	box-sizing border-box
-	display inline-block
 	width 20%
 	font-size 20px
-	height 100vh
+	height auto 
 	vertical-align top
-	div.dashboard-profile
+	position fixed
+	top 0 
+	left 0
+	bottom 0
+	div.dashboard-logotipo
 		box-sizing border-box
 		background-color #2ecc71
 		color white
 		font-size 0
 		padding-bottom 10px
 		height 120px
-		figure 
-			width 40%
-			display inline-block
-			margin 0 
-			padding 0
-			img 
-				box-sizing border-box
-				border-radius 50%
-				width 100%
-				padding 20px
-		p 
-			box-sizing border-box
-			display inline-block
-			width 60%
-			font-size 14px
-			padding-top 20px
-			padding-right 20px
+		h3 
 			margin 0
-			vertical-align top
+			padding 40px 0 0 40px
+			color white
+			font-size 30px 
 			font-weight 700
-			span 
-				font-weight 300	
-				font-size 12px	
 	div.dashboard-options
-		padding-top 20px 
-		ul 
+		padding-top 20px
+		div.dashboard-profile
+			width 100% 
+			margin-bottom 20px
+			figure 
+				display block
+				text-align center
+				img 
+					border-radius 50%
+					width 50%
+			p 
+				margin 0 
+				text-align center
+				color white
+				line-height 0
+				font-size 14px 
+		ul
+			display block 
 			margin 0 
 			padding 0
 			li 
@@ -248,10 +251,10 @@ section.dashboard-left
 section.dashboard-right
 	vertical-align top
 	box-sizing border-box
-	display inline-block
-	width 80%
+	width 100%
 	font-size 20px
-	height 100vh
+	height-min 100vh
+	padding-left 20%
 	div.dashboard-titulo
 		box-sizing border-box
 		width 100%
@@ -283,6 +286,86 @@ section.dashboard-right
 			right 20px
 			span 
 				margin-right 10px
+	div.contenido 
+		border-box border-box
+		padding-top 20px
+		padding-left 30px
+		padding-right 30px
+		div.bienvenida
+			width 100%
+			p 
+				color gray 
+				margin 0
+		div.dashboard-perfil
+			box-sizing border-box
+			width 100% 
+			padding-left 10px
+			padding-right 35px
+			div.perfil-avatar
+				width 100%
+				box-sizing border-bottom
+				border-bottom 1px solid #bdc3c7
+				border-left 1px solid #bdc3c7
+				border-right 1px solid #bdc3c7
+				padding-left 25px 
+				padding-bottom 15px
+				figure
+					display inline-block
+					width 100px
+					padding 0
+					margin 0
+					img 
+						border-radius 10px
+						padding 0
+						width 100% 
+				div
+					vertical-align top
+					display inline-block 
+					padding-top 35px
+					padding-left 15px
+					a.dashboard-btn-cambiarfoto 
+						border-radius 7px
+						background-color #bdc3c7
+						display inline-block 
+						color black
+						font-size 14px
+						font-weight 600
+						padding 10px 20px
+			div.perfil-datos
+				box-sizing border-bottom
+				width 100%
+				border-left 1px solid #bdc3c7
+				border-right 1px solid #bdc3c7
+				padding-left 25px 
+				padding-bottom 15px
+				p 
+					margin 0
+					padding-top 20px
+					font-size 14px
+					span 
+						display block
+						margin-bottom 10px
+					input 
+						border 1px solid #bdc3c7
+						border-radius 5px
+						display block
+						width 300px
+						font-weight 600
+						padding 10px 10px
+						outline 0
+						&:hover 
+							border 1px solid #3498db
+					a.dashboard-btn-grabar
+						border-radius 5px
+						margin-top 20px
+						color white 
+						background-color #3498db 
+						display inline-block 
+						font-size 16px 
+						font-weight 400
+						padding 10px 20px 
+						text-decoration none
+				
 
 // LLamamos al tipo de Fuente de IcoonMoon
 
